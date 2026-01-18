@@ -162,10 +162,12 @@ body{
  background-color: #230E3D;
 }
 .featured-title{
- margin-top: 120px;
+ padding-top: 100px;
  text-align: center;
+ align-items: center;
 }
 .featured-container{
+  
   display: grid;
   grid-template-columns: repeat(3,1fr);
   padding: 120px 200px;
@@ -196,10 +198,6 @@ body{
   margin-top: 16px;
   color: #FFFFFF;
 }
-/* .featured-card-05{
-  border: 1px solid blue;
-} */
-/* responsive section  */
 
 /* mobile display */
 @media screen and (max-width:576px) {
@@ -225,8 +223,12 @@ body{
   height: 100%;
 
 }
+.featured{
+  padding: auto;
+}
 .featured-container{
   grid-template-columns: repeat(1,1fr);
+  padding: auto;
   margin-right: 10px;
   width: 100%;
   grid-column: span 1;
