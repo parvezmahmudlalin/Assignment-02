@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Shared     Style */
+
+/* display flex */
+.display-flex{
+  display: flex;
+}
+.btn{
+  background: linear-gradient(#F7E93F,#FB09B4,#9100F8);
+  border-radius: 30px;
+}
+
+/* shared background color */
+.linear-gradient{
+  background-color: linear-gradient(#F7E93F,#FB09B4,#9100F8);
+
+}
+
+
+/* navbar style */
+body{
+  max-width: 1600px;
+  margin: 0 auto;
+  color: #FFFFFF;
+}
+.navbar{
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 37px;
+  /* border: 1px solid red; */
+}
+.nav-title{
+  font-weight: 700;
+  font-size: 3rem;
+}
+.nav-title>span {
+  
+}
+
+.nav-items{
+  list-style: none;
+  gap: 32px;
+}
+.nav-link{
+  text-decoration: none;
+  font-weight: 500;
+
+}
+.nav-btn{
+  max-height: 44px;
+  padding: 12px 40px ;
+  font-weight: 600;
+  color: #FFFFFF;
+  border: none;
+}
+.menu-btn{
+  display: none;
+}
+/* banner section */
+.banner-content{
+  max-height: 760px;
+  background:url("../assets/hero-bg.png"), #230E3D;
+  background-repeat: no-repeat;
+}
+.banner{
+  margin: 121px 625px;
+  justify-content: center;
+  align-items: center;
+  max-width: 550px;
+  max-height: 560px;
+  
+}
+.banner-img{
+  
+}
+.banner-circle{
+  max-width: 350px;
+  max-height: 350px;
+  position: relative;
+  z-index: 1px;
+}
+.banner-mic{
+  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  top: 310px;
+  left: 47%;
+  /* z-index: -10px; */
+}
+
+
+/* about section */
+.about-content{
+  max-width: 1200px;
+  max-height: 223px;
+  margin: 0 auto;
+  margin-top: 50px; 
+  text-align: center;
+  gap: 10px;
+
+}
+.about-title{
+  font-weight: 700;
+  font-size: 3rem;
+}
+.about-description{
+  margin-top: 16px;
+  gap: 10px;
+}
+.about-description>h4{
+  margin-top: 15px;
+}
+
+
+/* status section */
+.stats-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 160px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 80px;
+}
+.stats-content{
+ 
+  max-width: 240px;
+  max-height: 150px;
+  margin-bottom: 120px;
+  text-align: center;
+}
+.stats-title{
+  color: #00FF88;
+  font-size: 3rem;
+}
+.stats-description{
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+/* responsive section  */
+
+/* mobile display */
+@media screen and (max-width:576px) {
+  .nav-title{
+ 
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+.nav-items,.nav-btn{
+  display: none;
+}
+.menu-btn{
+  display: inline;
+}
+}
