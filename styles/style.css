@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+  /* font-family: "Inter", sans-serif; */
 }
 
 /* Shared     Style */
@@ -39,9 +39,19 @@
 
 /* navbar style */
 body{
-  max-width: 1600px;
-  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
   color: #FFFFFF;
+  font-family: "Inter", sans-serif;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero{
+  min-height: 100vh;
+
 }
 .navbar{
   justify-content: space-around;
@@ -52,9 +62,7 @@ body{
   font-weight: 700;
   font-size: 3rem;
 }
-.nav-title>span {
-  
-}
+
 
 .nav-items{
   list-style: none;
@@ -73,6 +81,24 @@ body{
   font-weight: 600;
   color: #FFFFFF;
   border: none;
+  /* add  new */
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-6px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(-3px);
+  }
 }
 .menu-btn{
   display: none;
@@ -80,11 +106,15 @@ body{
 /* banner section */
 
 .banner-container{
-  max-width: 1600px;
-  min-height: 760px;
+  /* max-width: 1600px; */
+  /* min-height: 760px; */
+  /* width: 100%; */
+  /* height: 100%; */
   margin: 0 auto;
   background: url("../assets/hero-bg.png");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
 
 }
 .banner{
@@ -103,16 +133,18 @@ body{
 }
 .banner-mic{
  position: absolute;
- 
+ /* width: 100%; */
 
 }
-.new-btn{
+.new-badge{
   position: absolute;
   top: 5%;
   left: 55%;
   background-color: #00FF88;
   padding: 8px 16px;
   border-radius: 100px;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
 }
 
 
@@ -210,7 +242,7 @@ body{
   .ep-card{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  display: flex;
+  /* display: flex; */
   gap: 30px;
     
  }
@@ -260,7 +292,7 @@ body{
 
 /* status section */
 .stats-container{
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   margin-top: 80px;
   display: grid;
@@ -385,7 +417,11 @@ footer{
   justify-content: center;
   align-items: center;
   background: url("../assets/footer-bg.png");
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
+
+
 }
 .footer-content{
  max-width: 1360px;
@@ -420,6 +456,8 @@ footer{
   color: #FAFAFA;
 }
 /* mobile display */
+
+
 @media screen and (max-width:576px) {
   .nav-title{
  
@@ -457,4 +495,19 @@ footer{
 .featured-container{
 
 }
+
+.ep-card{
+  grid-template-columns: repeat(1,1fr);
+  margin-top: 100px;
+}
+.ep-container{
+  flex-direction: column;
+
+}
+.host-container{
+  flex-direction: column;
+}
+/* .stats-container{
+  grid-template-columns: repeat(2,1fr);
+} */
 }
