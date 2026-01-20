@@ -237,13 +237,15 @@ img {
   }
   .ep-content{
     /* background-color: #230E3D; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 
   }
   .ep-card{
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3,1fr);
-  /* display: flex; */
-  gap: 30px;
+  display: flex;
+  gap: 30px; */
     
  }
 
@@ -424,7 +426,9 @@ footer{
 
 }
 .footer-content{
- max-width: 1360px;
+ /* max-width: 1360px; */
+ width: 100%;
+ height: 100%;
  margin: 0 auto;
 
  padding: 120px;
@@ -495,11 +499,19 @@ footer{
 .featured-container{
 
 }
-
 .ep-card{
-  grid-template-columns: repeat(1,1fr);
-  margin-top: 100px;
+  margin-top: 120px;
 }
+.ep-content{
+    /* background-color: #230E3D; */
+    /* display: grid; */
+    grid-template-columns: repeat(1,1fr);
+    /* margin-top: 120px; */
+    margin-left: 80px;
+    padding: 20px;
+
+
+  }
 .ep-container{
   flex-direction: column;
 
